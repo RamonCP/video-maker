@@ -1,10 +1,16 @@
 const readline = require('readline-sync')
+const robots = {
+    userInput: require('./robots/user-input.js'),
+    text: require('./robots/text.js')
+}
 
 function start() {
     const content = {}
 
     content.termoPesquisa = retornoTermoPesquisa()
     content.termoPrefixo = retornoTermoPrefixo()
+    
+    robots.text(content)
 
     function retornoTermoPesquisa () {
         return readline.question('Digite um termo de pesquisa: ')

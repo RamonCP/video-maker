@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/RamonCP/video-maker#readme",
   "dependencies": {
+    "algorithmia": "^0.3.10",
+    "algorithms": "^0.10.0",
     "readline-sync": "^1.4.9"
   }
 }
