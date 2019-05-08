@@ -4,13 +4,13 @@ const robots = {
     text: require('./robots/text.js')
 }
 
-function start() {
+async function start() {
     const content = {}
 
     content.termoPesquisa = retornoTermoPesquisa()
     content.termoPrefixo = retornoTermoPrefixo()
     
-    robots.text(content)
+    await robots.text(content)
 
     function retornoTermoPesquisa () {
         return readline.question('Digite um termo de pesquisa: ')
