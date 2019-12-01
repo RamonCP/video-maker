@@ -1,2 +1,2 @@
 # video-maker
-Criação de Videos automatizados
+Automated videos creation
